@@ -6,9 +6,15 @@ body {
     background-color: rgba(0, 0, 0, 0.9);;
 }
 
+ul,
+ol {
+    padding-inline-start: 0px;
+    display: block;
+}
+
 ul li,
 ol li {
-    list-style-position: inside;
+    list-style-type: none;
     text-align: center;
     align-items: center;
     color: white; opacity: 0.7;
@@ -16,7 +22,25 @@ ol li {
 
 ul li a {
     font-size: 30px;
-    color: lightskyblue; opacity: 0.9;
+    color: rgb(255, 255, 255); opacity: 1;
+    font-weight: bold;
+    padding: 20px;
+    margin: 10px;
+    display: inline-block;
+    background-color: rgb(132, 210, 247); opacity: 1;
+    text-decoration: none;
+    border-radius: 25px;
+    box-shadow: 0 9px #999;
+}
+
+ul li a:hover {
+    background-color: rgba(132, 211, 247, 0.699);
+}
+
+ul li a:active {
+    background-color:  rgba(132, 211, 247, 0.699);
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
 }
 
 img {
